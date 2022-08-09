@@ -4,6 +4,16 @@ import Navbar from './components/Navbar';
 
 function App() {
 	const [mode, setMode] = useState('light');
+
+	const toggleMode = () => {
+		if (mode === 'light') {
+			setMode("dark");
+		}
+		else {
+			setMode("light");
+		}
+	}
+
   return (
     <div className="App">
 			<Navbar title="Hackathon"/>
