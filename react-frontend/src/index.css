@@ -27,3 +27,8 @@ code {
 #dark-mode-label {
 	font-weight: 300;
 }
+
+#settings-icon {
+	color: white;
+	padding: 4px;
+}
