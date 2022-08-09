@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import SearchBar from './components/SearchBar';
 
 function App() {
 	const [mode, setMode] = useState('light');
@@ -22,6 +23,7 @@ function App() {
   return (
     <div className="App">
 			<Navbar title="Weather" toggleMode={toggleMode}/>
+			<SearchBar/>
 			<Footer/>
     </div>
   );
