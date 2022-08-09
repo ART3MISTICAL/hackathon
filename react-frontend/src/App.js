@@ -23,7 +23,9 @@ function App() {
   return (
     <div className="App">
 			<Navbar title="Weather" toggleMode={toggleMode}/>
-			<SearchBar/>
+			<div className="container">
+				<SearchBar/>
+			</div>
 			<Footer/>
     </div>
   );
