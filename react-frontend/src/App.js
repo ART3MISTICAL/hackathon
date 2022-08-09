@@ -9,7 +9,7 @@ function App() {
 		if (mode === 'light') {
 			setMode("dark");
 			console.log(mode)
-			document.body.style.backgroundColor = '#121212';
+			document.body.style.backgroundColor = '#151516';
 		}
 		else {
 			setMode("light");
