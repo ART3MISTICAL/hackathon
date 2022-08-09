@@ -8,15 +8,17 @@ function App() {
 	const toggleMode = () => {
 		if (mode === 'light') {
 			setMode("dark");
+			console.log(mode)
 		}
 		else {
 			setMode("light");
+			console.log(mode)
 		}
 	}
 
   return (
     <div className="App">
-			<Navbar title="Hackathon"/>
+			<Navbar title="Hackathon" toggleMode={toggleMode}/>
     </div>
   );
 }
