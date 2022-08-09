@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-			<Navbar title="Hackathon" toggleMode={toggleMode}/>
+			<Navbar title="Weather" toggleMode={toggleMode}/>
 			<Footer/>
     </div>
   );
