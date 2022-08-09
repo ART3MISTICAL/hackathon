@@ -9,10 +9,12 @@ function App() {
 		if (mode === 'light') {
 			setMode("dark");
 			console.log(mode)
+			document.body.style.backgroundColor = '#403E3F';
 		}
 		else {
 			setMode("light");
 			console.log(mode)
+			document.body.style.backgroundColor = 'white';
 		}
 	}
 
