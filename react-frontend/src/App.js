@@ -3,7 +3,6 @@ import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import SearchBar from './components/SearchBar';
-import Background from './components/background';
 import rainy from  "./assets/rain.png";
 
 
@@ -24,19 +23,24 @@ function App() {
 		}
 	}
 
-	Background()
-	const myStyle={
-		backgroundImage: `url(${rainy})` ,
-		//height:'100vh',
-		//marginTop:'-70px',
-		//fontSize:'50px',
-		backgroundSize: "cover",
-		backgroundRepeat: 'no-repeat',
-};
+	let weather = "rainy";
 
+	let weatherBackground = () => { 
+		if (weather==="rainy") {
+				const myStyle={
+					backgroundImage: `url(${rainy})` ,
+					height:'100vh',
+					marginTop:'-70px',
+					//fontSize:'50px',
+					backgroundSize: "cover",
+					backgroundRepeat: 'no-repeat',
+			};
+			return myStyle;
+		}
+	}
 
   return (
-    <div className="App" style={myStyle}>
+    <div className="App" style={weatherBackground}>
 			<Navbar title="Weather" toggleMode={toggleMode}/>
 			<div className="container">
 				<SearchBar/>

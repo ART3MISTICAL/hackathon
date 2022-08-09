@@ -30,5 +30,11 @@ code {
 }
 
 #footer {
-	margin-top: 100%;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+#search-bar {
+	padding-top: 80px;
 }
