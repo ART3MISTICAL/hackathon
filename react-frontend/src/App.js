@@ -3,8 +3,12 @@ import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import SearchBar from './components/SearchBar';
+import Background from './components/background';
 
 function App() {
+
+	Background()
+
 	const [mode, setMode] = useState('light');
 
 	const toggleMode = () => {
