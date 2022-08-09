@@ -23,3 +23,7 @@ code {
 		margin-left: auto;
 	}
 }
+
+#dark-mode-label {
+	font-weight: 300;
+}
