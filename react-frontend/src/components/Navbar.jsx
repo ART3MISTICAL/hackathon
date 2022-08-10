@@ -15,9 +15,9 @@ export default function Navbar(props) {
 						<a className="nav-link active" aria-current="page" href="/">Home</a>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="/">About us</a>
+						<a className="nav-link" href="/about">About us</a>
 					</li>
-					<li className="nav-item dropdown">
+					{/*<li className="nav-item dropdown">
 						<a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Dropdown
 						</a>
@@ -30,15 +30,15 @@ export default function Navbar(props) {
 					</li>
 					<li className="nav-item">
 						<a className="nav-link disabled" href="/" tabIndex="-1" aria-disabled="true">Disabled</a>
-					</li>
+					</li>*/}
 				</ul>
 				<ul className="navbar-nav flex-row flex-wrap ms-md-auto">
-					<li>
+					{/*<li>
 						<div className="form-check form-switch text-light my-2">
   						<input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
   						<label className="form-check-label" htmlFor="flexSwitchCheckDefault" id="dark-mode-label">Dark Mode</label>
 						</div>
-					</li>
+					</li>*/}
 					<li className="nav-item" id="contact">
 						<a className="nav-link" href="/">Contact us</a>
 					</li>
