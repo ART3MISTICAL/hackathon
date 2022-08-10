@@ -16,7 +16,7 @@ function App() {
 			setMode("rainy");
 			console.log(mode);
 			document.body.style.backgroundImage = `url(${rainy})`;
-			document.body.style.backgroundSize = "1920px 720px";
+			document.body.style.backgroundSize = "1920px 1080px";
 			document.body.style.backgroundRepeat = "no-repeat";
 			
 		}
