@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import SearchBar from './components/SearchBar';
 import rainy from  "./assets/rain.png";
+import earth from "./assets/earth.jpg"
 
 
 function App() {
@@ -12,32 +13,33 @@ function App() {
 
 	const toggleMode = () => {
 		if (mode === 'light') {
-			setMode("dark");
-			console.log(mode)
-			document.body.style.backgroundColor = '#151516';
+			setMode("rainy");
+			console.log(mode);
+			document.body.style.backgroundImage = `url(${rainy})`;
+			
 		}
 		else {
 			setMode("light");
-			console.log(mode)
-			document.body.style.backgroundColor = 'white';
+			console.log(mode);
+			document.body.style.backgroundImage = `url(${earth})` ;
 		}
 	}
 
-	let weather = "rainy";
+	//let weather = "rainy";
 
-	let weatherBackground = () => { 
-		if (weather==="rainy") {
-				const myStyle={
-					backgroundImage: `url(${rainy})` ,
-					height:'100vh',
-					marginTop:'-70px',
-					//fontSize:'50px',
-					backgroundSize: "cover",
-					backgroundRepeat: 'no-repeat',
-			};
-			return myStyle;
-		}
-	}
+	//let weatherBackground = () => { 
+	//	if (weather==="rainy") {
+	//			const myStyle={
+	//				backgroundImage: `url(${rainy})` ,
+	//				height:'100vh',
+	//				marginTop:'-70px',
+	//				//fontSize:'50px',
+	//				backgroundSize: "cover",
+	//				backgroundRepeat: 'no-repeat',
+	//		};
+	//		return myStyle;
+	//	}
+	//}
 
   return (
     <div className="App">
