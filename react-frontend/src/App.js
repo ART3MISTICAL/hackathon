@@ -18,6 +18,7 @@ function App() {
 			document.body.style.backgroundImage = `url(${rainy})`;
 			document.body.style.backgroundSize = "1920px 1080px";
 			document.body.style.backgroundRepeat = "no-repeat";
+			document.getElementById("main-title").style.color = "black";
 			
 		}
 		else {
@@ -26,6 +27,7 @@ function App() {
 			document.body.style.backgroundImage = `url(${earth})` ;
 			document.body.style.backgroundSize = "1920px 1080px";
 			document.body.style.backgroundRepeat = "no-repeat";
+			document.getElementById("main-title").style.color = "white";
 		}
 	}
 	
@@ -68,7 +70,7 @@ function App() {
 			<div className="container">
 				<SearchBar/>
 			</div>
-			<Footer/>
+			<Footer id="footer"/>
     </div>
   );
 }

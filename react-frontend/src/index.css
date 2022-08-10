@@ -12,6 +12,7 @@ body {
   background-position-y: -80px;
   background-size: "1920px 1080px";
   background-repeat: no-repeat;
+  
 }
 
 code {
@@ -27,15 +28,21 @@ code {
 	#contact {
 		margin-left: auto;
 	}
+
 	#main-title {
 		padding: 20px;
 	}
+
 	#search-bar {
 		margin-top: -50px;
 		margin-left: auto;
 		margin-right: auto;
 		width: 90%;
 	}
+/*
+	#footer {
+		margin-top: 100%;
+	}*/
 }
 
 #dark-mode-label {
