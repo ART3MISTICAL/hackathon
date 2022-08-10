@@ -7,6 +7,7 @@ import rainy from  "./assets/rain.png";
 import cloudy from "./assets/cloud.jpg";
 import About from './components/About';
 import Home from './components/Home';
+import cloudyPhone from './assets/earth2.png';
 import {
   BrowserRouter,
   Routes,
@@ -20,7 +21,7 @@ function App() {
 
 	//const [mode, setMode] = useState('cloudy');
 
-	let weather = "rainy";
+	let weather = "cloudy";
 
 	//const toggleMode = () => {
 	//	if (weather === 'rainy') {
@@ -44,22 +45,39 @@ function App() {
 	//}
 	
 	if (weather === 'rainy') {
+		if (window.matchMedia("(min-width: 979px)").matches) {
+			document.body.style.backgroundImage = `url(${rainy})`;
+			document.body.style.backgroundSize = "1920px 1080px";
+			document.body.style.backgroundRepeat = "no-repeat";		
+		} else {
+			document.body.style.backgroundImage = `url(${rainy})`;
+			document.body.style.backgroundSize = "1920px 1080px";
+			document.body.style.backgroundRepeat = "no-repeat";
+		}
 		//setMode("rainy");
 		//console.log(mode);
-		document.body.style.backgroundImage = `url(${rainy})`;
-		document.body.style.backgroundSize = "1920px 1080px";
-		document.body.style.backgroundRepeat = "no-repeat";
+
 		//document.getElementById("main-title").style.color = "black";
 		
 	}
 	else if (weather === 'cloudy') {
+		if (window.matchMedia("(min-width: 979px)").matches) {
+			document.body.style.backgroundImage = `url(${cloudy})` ;
+			document.body.style.backgroundSize = "1920px 1080px";
+			document.body.style.backgroundRepeat = "no-repeat";
+
 		//setMode("cloudy");
 		//console.log(mode);
-		document.body.style.backgroundImage = `url(${cloudy})` ;
-		document.body.style.backgroundSize = "1920px 1080px";
-		document.body.style.backgroundRepeat = "no-repeat";
+
 		//document.getElementById("main-title").style.color = "white";
 		//document.body.style.backgroundPositionY = "-150px"
+		} else {
+
+
+		document.body.style.backgroundImage = `url(${cloudyPhone})` ;
+		//document.body.style.backgroundSize = "1920px 1080px";
+		document.body.style.backgroundRepeat = "no-repeat";
+	}
 	}
 	
 
