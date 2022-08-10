@@ -61,21 +61,18 @@ function App() {
 		
 	}
 	else if (weather === 'cloudy') {
-		if (window.matchMedia("(min-width: 979px)").matches) {
-			document.body.style.backgroundImage = `url(${cloudy})` ;
-			document.body.style.backgroundSize = "1920px 1080px";
+		if (window.matchMedia("(max-width: 600px)").matches) {
+			document.body.style.backgroundImage = `url(${cloudyPhone})` ;
+			document.body.style.backgroundSize = "600px 979px";
 			document.body.style.backgroundRepeat = "no-repeat";
-
 		//setMode("cloudy");
 		//console.log(mode);
 
 		//document.getElementById("main-title").style.color = "white";
 		//document.body.style.backgroundPositionY = "-150px"
 		} else {
-
-
-		document.body.style.backgroundImage = `url(${cloudyPhone})` ;
-		//document.body.style.backgroundSize = "1920px 1080px";
+		document.body.style.backgroundImage = `url(${cloudy})` ;
+		document.body.style.backgroundSize = "1920px 1080px";
 		document.body.style.backgroundRepeat = "no-repeat";
 	}
 	}
