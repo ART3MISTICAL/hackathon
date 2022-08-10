@@ -8,6 +8,7 @@ import cloudy from "./assets/cloud.jpg";
 import About from './components/About';
 import Home from './components/Home';
 import cloudyPhone from './assets/earth2.png';
+import rainyPhone from './assets/rain2.png';
 import {
   BrowserRouter,
   Routes,
@@ -21,7 +22,7 @@ function App() {
 
 	//const [mode, setMode] = useState('cloudy');
 
-	let weather = "cloudy";
+	let weather = "rainy";
 
 	//const toggleMode = () => {
 	//	if (weather === 'rainy') {
@@ -45,9 +46,9 @@ function App() {
 	//}
 	
 	if (weather === 'rainy') {
-		if (window.matchMedia("(min-width: 979px)").matches) {
-			document.body.style.backgroundImage = `url(${rainy})`;
-			document.body.style.backgroundSize = "1920px 1080px";
+		if (window.matchMedia("(max-width: 600px)").matches) {
+			document.body.style.backgroundImage = `url(${rainyPhone})`;
+			document.body.style.backgroundSize = "500px 1700px";
 			document.body.style.backgroundRepeat = "no-repeat";		
 		} else {
 			document.body.style.backgroundImage = `url(${rainy})`;
