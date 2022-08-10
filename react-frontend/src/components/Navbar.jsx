@@ -17,7 +17,7 @@ export default function Navbar(props) {
 					<li className="nav-item">
 						<a className="nav-link" href="/">About us</a>
 					</li>
-					<li className="nav-item dropdown">
+					{/*<li className="nav-item dropdown">
 						<a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Dropdown
 						</a>
@@ -30,7 +30,7 @@ export default function Navbar(props) {
 					</li>
 					<li className="nav-item">
 						<a className="nav-link disabled" href="/" tabIndex="-1" aria-disabled="true">Disabled</a>
-					</li>
+					</li>*/}
 				</ul>
 				<ul className="navbar-nav flex-row flex-wrap ms-md-auto">
 					{/*<li>
