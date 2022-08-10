@@ -16,12 +16,16 @@ function App() {
 			setMode("rainy");
 			console.log(mode);
 			document.body.style.backgroundImage = `url(${rainy})`;
+			document.body.style.backgroundSize = "1920px 720px";
+			document.body.style.backgroundRepeat = "no-repeat";
 			
 		}
 		else {
 			setMode("light");
 			console.log(mode);
 			document.body.style.backgroundImage = `url(${earth})` ;
+			document.body.style.backgroundSize = "1920px 820px";
+			document.body.style.backgroundRepeat = "no-repeat";
 		}
 	}
 
