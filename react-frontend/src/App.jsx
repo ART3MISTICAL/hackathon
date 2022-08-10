@@ -4,7 +4,15 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import SearchBar from './components/SearchBar';
 import rainy from  "./assets/rain.png";
-import cloudy from "./assets/cloud.jpg"
+import cloudy from "./assets/cloud.jpg";
+import About from './components/About';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 
 function App() {
@@ -86,14 +94,21 @@ function App() {
 
   return (
     <div className="App">
+			<BrowserRouter>
 			<h1 id="main-title">
 				Weather App
 			</h1>
 			<Navbar title="Weather"/>
+			<Routes>
+				<Route exact path="/" element={<SearchBar/>} />
+      	<Route path="/about" element={<About/>} />
+
+        </Routes>
 			<div className="container">
-				<SearchBar/>
+				
 			</div>
 			<Footer id="footer"/>
+			</BrowserRouter>
     </div>
   );
 }
