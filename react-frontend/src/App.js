@@ -40,7 +40,7 @@ function App() {
 	}
 
   return (
-    <div className="App" style={weatherBackground}>
+    <div className="App">
 			<Navbar title="Weather" toggleMode={toggleMode}/>
 			<div className="container">
 				<SearchBar/>
