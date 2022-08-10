@@ -70,3 +70,17 @@ code {
 	color: white;
 	margin-top: 40px;
 }
+
+#search-icon {
+	color: black;
+	background-color: aqua;
+}
+
+#search-addon {
+	color: aqua;
+	background-color: aqua;
+}
+
+#searchbar {
+	background-color: white;
+}
