@@ -28,6 +28,7 @@ function App() {
 			document.body.style.backgroundRepeat = "no-repeat";
 		}
 	}
+	
 
 	//let weather = "rainy";
 
