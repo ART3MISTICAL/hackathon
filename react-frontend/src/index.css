@@ -27,6 +27,15 @@ code {
 	#contact {
 		margin-left: auto;
 	}
+	#main-title {
+		padding: 20px;
+	}
+	#search-bar {
+		margin-top: -50px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
 }
 
 #dark-mode-label {
@@ -42,5 +51,11 @@ code {
 }
 
 #search-bar {
-	padding-top: 80px;
+	padding-top: 40px;
+}
+
+
+#main-title {
+	color: white;
+	margin-top: 40px;
 }

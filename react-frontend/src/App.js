@@ -61,6 +61,9 @@ function App() {
 
   return (
     <div className="App">
+			<h1 id="main-title">
+				Weather App
+			</h1>
 			<Navbar title="Weather" toggleMode={toggleMode}/>
 			<div className="container">
 				<SearchBar/>
