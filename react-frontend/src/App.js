@@ -28,6 +28,7 @@ function App() {
 			document.body.style.backgroundSize = "1920px 1080px";
 			document.body.style.backgroundRepeat = "no-repeat";
 			document.getElementById("main-title").style.color = "white";
+			//document.body.style.backgroundPositionY = "-150px"
 		}
 	}
 	
