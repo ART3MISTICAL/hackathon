@@ -11,7 +11,7 @@ function App() {
 
 	//const [mode, setMode] = useState('cloudy');
 
-	let weather = "cloudy";
+	let weather = "rainy";
 
 	//const toggleMode = () => {
 	//	if (weather === 'rainy') {
