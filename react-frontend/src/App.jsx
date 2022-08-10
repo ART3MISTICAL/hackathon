@@ -9,6 +9,8 @@ import About from './components/About';
 import Home from './components/Home';
 import cloudyPhone from './assets/earth2.png';
 import rainyPhone from './assets/rain2.png';
+import sunny from './assets/sunny.jpg';
+import sunnyPhone from './assets/sunny2.jpg';
 import {
   BrowserRouter,
   Routes,
@@ -22,7 +24,7 @@ function App() {
 
 	//const [mode, setMode] = useState('cloudy');
 
-	let weather = "rainy";
+	let weather = "sunny";
 
 	//const toggleMode = () => {
 	//	if (weather === 'rainy') {
@@ -73,6 +75,23 @@ function App() {
 		//document.body.style.backgroundPositionY = "-150px"
 		} else {
 		document.body.style.backgroundImage = `url(${cloudy})` ;
+		document.body.style.backgroundSize = "1920px 1080px";
+		document.body.style.backgroundRepeat = "no-repeat";
+	}
+	}
+
+	else if (weather === 'sunny') {
+		if (window.matchMedia("(max-width: 600px)").matches) {
+			document.body.style.backgroundImage = `url(${sunnyPhone})` ;
+			document.body.style.backgroundSize = "600px 979px";
+			document.body.style.backgroundRepeat = "no-repeat";
+		//setMode("cloudy");
+		//console.log(mode);
+
+		//document.getElementById("main-title").style.color = "white";
+		//document.body.style.backgroundPositionY = "-150px"
+		} else {
+		document.body.style.backgroundImage = `url(${sunny})` ;
 		document.body.style.backgroundSize = "1920px 1080px";
 		document.body.style.backgroundRepeat = "no-repeat";
 	}
