@@ -2,26 +2,56 @@ import { useState } from 'react';
 import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import SearchBar from './components/SearchBar';
+import rainy from  "./assets/rain.png";
+import earth from "./assets/earth.jpg"
+
 
 function App() {
+
 	const [mode, setMode] = useState('light');
 
 	const toggleMode = () => {
 		if (mode === 'light') {
-			setMode("dark");
-			console.log(mode)
-			document.body.style.backgroundColor = '#151516';
+			setMode("rainy");
+			console.log(mode);
+			document.body.style.backgroundImage = `url(${rainy})`;
+			document.body.style.backgroundSize = "1920px 720px";
+			document.body.style.backgroundRepeat = "no-repeat";
+			
 		}
 		else {
 			setMode("light");
-			console.log(mode)
-			document.body.style.backgroundColor = 'white';
+			console.log(mode);
+			document.body.style.backgroundImage = `url(${earth})` ;
+			document.body.style.backgroundSize = "1920px 820px";
+			document.body.style.backgroundRepeat = "no-repeat";
 		}
 	}
+	
+
+	//let weather = "rainy";
+
+	//let weatherBackground = () => { 
+	//	if (weather==="rainy") {
+	//			const myStyle={
+	//				backgroundImage: `url(${rainy})` ,
+	//				height:'100vh',
+	//				marginTop:'-70px',
+	//				//fontSize:'50px',
+	//				backgroundSize: "cover",
+	//				backgroundRepeat: 'no-repeat',
+	//		};
+	//		return myStyle;
+	//	}
+	//}
 
   return (
     <div className="App">
-			<Navbar title="Hackathon" toggleMode={toggleMode}/>
+			<Navbar title="Weather" toggleMode={toggleMode}/>
+			<div className="container">
+				<SearchBar/>
+			</div>
 			<Footer/>
     </div>
   );
