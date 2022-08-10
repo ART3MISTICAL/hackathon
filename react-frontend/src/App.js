@@ -29,24 +29,24 @@ function App() {
 		}
 	}
 	
-	setMode("earth")
-	const background = () => {
-		if (mode === 'rainy') {
-			console.log(mode);
-			document.body.style.backgroundImage = `url(${rainy})`;
-			document.body.style.backgroundSize = "1920px 1080px";
-			document.body.style.backgroundRepeat = "no-repeat";
+	//setMode("earth")
+	//const background = () => {
+	//	if (mode === 'rainy') {
+	//		console.log(mode);
+	//		document.body.style.backgroundImage = `url(${rainy})`;
+	//		document.body.style.backgroundSize = "1920px 1080px";
+	//		document.body.style.backgroundRepeat = "no-repeat";
 			
-		}
-		else {
-			console.log(mode);
-			document.body.style.backgroundImage = `url(${earth})` ;
-			document.body.style.backgroundSize = "1920px 1080px";
-			document.body.style.backgroundRepeat = "no-repeat";
-		}
-	}
+	//	}
+	//	else {
+	//		console.log(mode);
+	//		document.body.style.backgroundImage = `url(${earth})` ;
+	//		document.body.style.backgroundSize = "1920px 1080px";
+	//		document.body.style.backgroundRepeat = "no-repeat";
+	//	}
+	//}
 
-	background()
+	//background()
 
 	//let weather = "rainy";
 
