@@ -23,16 +23,16 @@ import {
 
 function App() {
 
-	let weather = "";
+	let weather = "rainy";
 
 	if (weather === 'rainy') {
 		if (window.matchMedia("(max-width: 600px)").matches) {
 			document.body.style.backgroundImage = `url(${rainyPhone})`;
-			document.body.style.backgroundSize = "500px 1700px";
+			document.body.style.backgroundSize = "cover";
 			document.body.style.backgroundRepeat = "no-repeat";		
 		} else {
-			document.body.style.background = `rgba(0,0,0,0.6)url(${rainy})`;
-			document.body.style.backgroundSize = "1920px 1080px";
+			document.body.style.background = `rgba(0,0,0,0.2)url(${rainy})`;
+			document.body.style.backgroundSize = "cover";
 			document.body.style.backgroundRepeat = "repeat-y";
 			document.body.style.backgroundBlendMode = "darken";
 		}
@@ -40,14 +40,14 @@ function App() {
 	}
 	else if (weather === 'cloudy') {
 		if (window.matchMedia("(max-width: 600px)").matches) {
-			document.body.style.background = `rgba(0,0,0,0.6)url(${cloudyPhone})` ;
-			document.body.style.backgroundSize = "600px 1000px";
+			document.body.style.background = `rgba(0,0,0,0.2)url(${cloudyPhone})` ;
+			document.body.style.backgroundSize = "cover";
 			document.body.style.backgroundRepeat = "no-repeat";
 			document.body.style.backgroundBlendMode = "darken";
 
 		} else {
-		document.body.style.background = `rgba(0,0,0,0.6)url(${cloudy})` ;
-		document.body.style.backgroundSize = "1920px 1080px";
+		document.body.style.background = `rgba(0,0,0,0.2)url(${cloudy})` ;
+		document.body.style.backgroundSize = "cover";
 		document.body.style.backgroundRepeat = "repeat-y";
 		document.body.style.backgroundBlendMode = "darken";
 
@@ -56,14 +56,14 @@ function App() {
 
 	else if (weather === 'sunny') {
 		if (window.matchMedia("(max-width: 600px)").matches) {
-			document.body.style.background = `rgba(0,0,0,0.6)url(${sunnyPhone})` ;
-			document.body.style.backgroundSize = "600px 979px";
+			document.body.style.background = `rgba(0,0,0,0.2)url(${sunnyPhone})` ;
+			document.body.style.backgroundSize = "cover";
 			document.body.style.backgroundRepeat = "no-repeat";
 			document.body.style.backgroundBlendMode = "darken";
 
 		} else {
-		document.body.style.background = `rgba(0,0,0,0.6)url(${sunny})` ;
-		document.body.style.backgroundSize = "1920px 1080px";
+		document.body.style.background = `rgba(0,0,0,0.2)url(${sunny})` ;
+		document.body.style.backgroundSize = "cover";
 		document.body.style.backgroundRepeat = "repeat-y";
 		document.body.style.backgroundBlendMode = "darken";
 	}
@@ -71,14 +71,14 @@ function App() {
 	
 	else if (weather === 'clear') {
 		if (window.matchMedia("(max-width: 600px)").matches) {
-			document.body.style.background = `rgba(0,0,0,0.6)url(${clear})` ;
-			document.body.style.backgroundSize = "600px 979px";
+			document.body.style.background = `rgba(0,0,0,0.2)url(${clear})` ;
+			document.body.style.backgroundSize = "cover";
 			document.body.style.backgroundRepeat = "no-repeat";
 			document.body.style.backgroundBlendMode = "darken";
 
 		} else {
-		document.body.style.background = `rgba(0,0,0,0.6)url(${clear})` ;
-		document.body.style.backgroundSize = "1920px 1080px";
+		document.body.style.background = `rgba(0,0,0,0.2)url(${clear})` ;
+		document.body.style.backgroundSize = "cover";
 		document.body.style.backgroundRepeat = "repeat-y";
 		document.body.style.backgroundBlendMode = "darken";
 	}
