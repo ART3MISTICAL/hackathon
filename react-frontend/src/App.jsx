@@ -163,7 +163,7 @@ function App() {
 			<Navbar title="Weather"/>
 			<Routes>
 				<Route exact path="/" element={<Home/>} />
-      	<Route path="/about" element={<About/>} />
+      	<Route exact path="/about" element={<About/>} />
 
         </Routes>
 			<div className="container">
