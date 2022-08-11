@@ -23,31 +23,8 @@ import {
 
 function App() {
 
-	//const [mode, setMode] = useState('cloudy');
-
 	let weather = "";
 
-	//const toggleMode = () => {
-	//	if (weather === 'rainy') {
-	//		setMode("rainy");
-	//		//console.log(mode);
-	//		document.body.style.backgroundImage = `url(${rainy})`;
-	//		document.body.style.backgroundSize = "1920px 1080px";
-	//		document.body.style.backgroundRepeat = "no-repeat";
-	//		document.getElementById("main-title").style.color = "black";
-			
-	//	}
-	//	else if (weather === 'cloudy') {
-	//		setMode("cloudy");
-	//		//console.log(mode);
-	//		document.body.style.backgroundImage = `url(${cloudy})` ;
-	//		document.body.style.backgroundSize = "1920px 1080px";
-	//		document.body.style.backgroundRepeat = "no-repeat";
-	//		document.getElementById("main-title").style.color = "white";
-	//		//document.body.style.backgroundPositionY = "-150px"
-	//	}
-	//}
-	
 	if (weather === 'rainy') {
 		if (window.matchMedia("(max-width: 600px)").matches) {
 			document.body.style.backgroundImage = `url(${rainyPhone})`;
@@ -59,10 +36,6 @@ function App() {
 			document.body.style.backgroundRepeat = "repeat-y";
 			document.body.style.backgroundBlendMode = "darken";
 		}
-		//setMode("rainy");
-		//console.log(mode);
-
-		//document.getElementById("main-title").style.color = "black";
 		
 	}
 	else if (weather === 'cloudy') {
@@ -72,11 +45,6 @@ function App() {
 			document.body.style.backgroundRepeat = "no-repeat";
 			document.body.style.backgroundBlendMode = "darken";
 
-		//setMode("cloudy");
-		//console.log(mode);
-
-		//document.getElementById("main-title").style.color = "white";
-		//document.body.style.backgroundPositionY = "-150px"
 		} else {
 		document.body.style.background = `rgba(0,0,0,0.6)url(${cloudy})` ;
 		document.body.style.backgroundSize = "1920px 1080px";
@@ -92,11 +60,7 @@ function App() {
 			document.body.style.backgroundSize = "600px 979px";
 			document.body.style.backgroundRepeat = "no-repeat";
 			document.body.style.backgroundBlendMode = "darken";
-		//setMode("cloudy");
-		//console.log(mode);
 
-		//document.getElementById("main-title").style.color = "white";
-		//document.body.style.backgroundPositionY = "-150px"
 		} else {
 		document.body.style.background = `rgba(0,0,0,0.6)url(${sunny})` ;
 		document.body.style.backgroundSize = "1920px 1080px";
@@ -111,11 +75,7 @@ function App() {
 			document.body.style.backgroundSize = "600px 979px";
 			document.body.style.backgroundRepeat = "no-repeat";
 			document.body.style.backgroundBlendMode = "darken";
-		//setMode("cloudy");
-		//console.log(mode);
 
-		//document.getElementById("main-title").style.color = "white";
-		//document.body.style.backgroundPositionY = "-150px"
 		} else {
 		document.body.style.background = `rgba(0,0,0,0.6)url(${clear})` ;
 		document.body.style.backgroundSize = "1920px 1080px";
@@ -123,36 +83,6 @@ function App() {
 		document.body.style.backgroundBlendMode = "darken";
 	}
 	}
-
-	//setMode("earth")
-	//const background = () => {
-	//	if (mode === 'rainy') {
-	//		console.log(mode);
-	//		document.body.style.backgroundImage = `url(${rainy})`;
-	//		document.body.style.backgroundSize = "1920px 1080px";
-	//		document.body.style.backgroundRepeat = "no-repeat";
-			
-	//	}
-	//	else {
-	//		console.log(mode);
-	//		document.body.style.backgroundImage = `url(${earth})` ;
-	//		document.body.style.backgroundSize = "1920px 1080px";
-	//		document.body.style.backgroundRepeat = "no-repeat";
-	//	}
-	//}
-
-	//background()
-
-	//let weather = "rainy";
-
-	//let myStyle={
-	//	backgroundImage: `url(${rainy})` ,
-	//	height:'100vh',
-	//	marginTop:'-70px',
-	//	//fontSize:'50px',
-	//	backgroundSize: "cover",
-	//	backgroundRepeat: 'no-repeat',
-	//}
 
   return (
     <div className="App">
@@ -164,11 +94,7 @@ function App() {
 			<Routes>
 				<Route exact path="/" element={<Home/>} />
       	<Route exact path="/about" element={<About/>} />
-
         </Routes>
-			<div className="container">
-				
-			</div>
 			<Footer id="footer"/>
 			</BrowserRouter>
     </div>
