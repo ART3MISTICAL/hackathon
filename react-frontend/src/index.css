@@ -11,7 +11,7 @@ body {
   background-image: url("./assets/cloud.jpg");
   background-position-y: -150px;
   background-size: 1920px 1080px;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   
 }
 
@@ -20,11 +20,11 @@ code {
     monospace;
 }
 
-@media (max-width: 979px) {
+@media (max-width: 600px) {
 	body {
 	  padding-top: 20px;
-	  /*background-image: url("./assets/earth2.jpg");*/
-	  /*background-size: 1080px 1920px;*/
+	  background-image: url("./assets/earth2.png");
+	  background-size: 600px 1000px;
 	  /*background-position-y: -350px;*/
 	  /*background-position-x: -700px;*/
 	  /*background-size: ;*/
@@ -64,6 +64,9 @@ code {
 
 #search-bar {
 	padding-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
 }
 
 

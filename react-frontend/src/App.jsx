@@ -24,7 +24,7 @@ function App() {
 
 	//const [mode, setMode] = useState('cloudy');
 
-	let weather = "sunny";
+	let weather = "cloudy";
 
 	//const toggleMode = () => {
 	//	if (weather === 'rainy') {
@@ -53,9 +53,10 @@ function App() {
 			document.body.style.backgroundSize = "500px 1700px";
 			document.body.style.backgroundRepeat = "no-repeat";		
 		} else {
-			document.body.style.backgroundImage = `url(${rainy})`;
+			document.body.style.background = `rgba(0,0,0,0.6)url(${rainy})`;
 			document.body.style.backgroundSize = "1920px 1080px";
-			document.body.style.backgroundRepeat = "no-repeat";
+			document.body.style.backgroundRepeat = "repeat-y";
+			document.body.style.backgroundBlendMode = "darken";
 		}
 		//setMode("rainy");
 		//console.log(mode);
@@ -65,35 +66,41 @@ function App() {
 	}
 	else if (weather === 'cloudy') {
 		if (window.matchMedia("(max-width: 600px)").matches) {
-			document.body.style.backgroundImage = `url(${cloudyPhone})` ;
-			document.body.style.backgroundSize = "600px 979px";
+			document.body.style.background = `rgba(0,0,0,0.6)url(${cloudyPhone})` ;
+			document.body.style.backgroundSize = "600px 1000px";
 			document.body.style.backgroundRepeat = "no-repeat";
+			document.body.style.backgroundBlendMode = "darken";
+
 		//setMode("cloudy");
 		//console.log(mode);
 
 		//document.getElementById("main-title").style.color = "white";
 		//document.body.style.backgroundPositionY = "-150px"
 		} else {
-		document.body.style.backgroundImage = `url(${cloudy})` ;
+		document.body.style.background = `rgba(0,0,0,0.6)url(${cloudy})` ;
 		document.body.style.backgroundSize = "1920px 1080px";
-		document.body.style.backgroundRepeat = "no-repeat";
+		document.body.style.backgroundRepeat = "repeat-y";
+		document.body.style.backgroundBlendMode = "darken";
+
 	}
 	}
 
 	else if (weather === 'sunny') {
 		if (window.matchMedia("(max-width: 600px)").matches) {
-			document.body.style.backgroundImage = `url(${sunnyPhone})` ;
+			document.body.style.background = `rgba(0,0,0,0.6)url(${sunnyPhone})` ;
 			document.body.style.backgroundSize = "600px 979px";
 			document.body.style.backgroundRepeat = "no-repeat";
+			document.body.style.backgroundBlendMode = "darken";
 		//setMode("cloudy");
 		//console.log(mode);
 
 		//document.getElementById("main-title").style.color = "white";
 		//document.body.style.backgroundPositionY = "-150px"
 		} else {
-		document.body.style.backgroundImage = `url(${sunny})` ;
+		document.body.style.background = `rgba(0,0,0,0.6)url(${sunny})` ;
 		document.body.style.backgroundSize = "1920px 1080px";
-		document.body.style.backgroundRepeat = "no-repeat";
+		document.body.style.backgroundRepeat = "repeat-y";
+		document.body.style.backgroundBlendMode = "darken";
 	}
 	}
 	
