@@ -87,3 +87,34 @@ code {
 .search-bar:focus {
 	background-color: rgba(255, 255, 255, 0.75);
 }
+
+#temp {
+	font-size: 70px;
+	color: white;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#weather-box {
+	background-color: rgba(0, 0, 0, 0.3);
+	margin-top: 20px;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+
+	border-radius: 25px 25px;
+}
+
+#weather {
+	margin-top: 0px;
+	padding-top: 0px;
+	font-size: 25px;
+	color: white;
+}
+
+#place {
+	margin-top: 0px;
+	font-size: 20px;
+	color: white;
+}

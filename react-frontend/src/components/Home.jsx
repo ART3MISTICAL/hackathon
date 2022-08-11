@@ -7,7 +7,7 @@ export default function Home() {
 			<div className="container">
 				<SearchBar />
 			</div>
-			<div className="container">
+			<div className="container" id="weather-box">
 				<p id="temp">
 					15°c
 				</p>
