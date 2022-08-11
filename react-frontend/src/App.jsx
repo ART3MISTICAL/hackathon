@@ -12,6 +12,7 @@ import rainyPhone from './assets/rain2.png';
 import sunny from './assets/sunny.jpg';
 import sunnyPhone from './assets/sunny2.jpg';
 import clear from './assets/clear.jpg';
+import clearPhone from './assets/blue2.png';
 import {
   BrowserRouter,
   Routes,
@@ -23,7 +24,7 @@ import {
 
 function App() {
 
-	let weather = "rainy";
+	let weather = "clear";
 
 	if (weather === 'rainy') {
 		if (window.matchMedia("(max-width: 600px)").matches) {
@@ -71,7 +72,7 @@ function App() {
 	
 	else if (weather === 'clear') {
 		if (window.matchMedia("(max-width: 600px)").matches) {
-			document.body.style.background = `rgba(0,0,0,0.2)url(${clear})` ;
+			document.body.style.background = `rgba(0,0,0,0.2)url(${clearPhone})` ;
 			document.body.style.backgroundSize = "cover";
 			document.body.style.backgroundRepeat = "no-repeat";
 			document.body.style.backgroundBlendMode = "darken";
