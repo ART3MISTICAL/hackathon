@@ -11,6 +11,7 @@ import cloudyPhone from './assets/earth2.png';
 import rainyPhone from './assets/rain2.png';
 import sunny from './assets/sunny.jpg';
 import sunnyPhone from './assets/sunny2.jpg';
+import clear from './assets/clear.jpg';
 import {
   BrowserRouter,
   Routes,
@@ -24,7 +25,7 @@ function App() {
 
 	//const [mode, setMode] = useState('cloudy');
 
-	let weather = "cloudy";
+	let weather = "clear";
 
 	//const toggleMode = () => {
 	//	if (weather === 'rainy') {
@@ -104,6 +105,24 @@ function App() {
 	}
 	}
 	
+	else if (weather === 'clear') {
+		if (window.matchMedia("(max-width: 600px)").matches) {
+			document.body.style.background = `rgba(0,0,0,0.6)url(${clear})` ;
+			document.body.style.backgroundSize = "600px 979px";
+			document.body.style.backgroundRepeat = "no-repeat";
+			document.body.style.backgroundBlendMode = "darken";
+		//setMode("cloudy");
+		//console.log(mode);
+
+		//document.getElementById("main-title").style.color = "white";
+		//document.body.style.backgroundPositionY = "-150px"
+		} else {
+		document.body.style.background = `rgba(0,0,0,0.6)url(${clear})` ;
+		document.body.style.backgroundSize = "1920px 1080px";
+		document.body.style.backgroundRepeat = "repeat-y";
+		document.body.style.backgroundBlendMode = "darken";
+	}
+	}
 
 	//setMode("earth")
 	//const background = () => {
