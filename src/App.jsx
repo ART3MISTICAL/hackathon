@@ -26,9 +26,9 @@ function App() {
 			</h1>
 			<Navbar title="Weather"/>
 			<Routes>
-				<Route exact path="/hackathon/" element={<Home/>} />
-      	<Route exact path="/hackathon/about" element={<About/>} />
-				<Route exact path="/hackathon/contact-us" element={<Contact/>} />
+				<Route exact path="/" element={<Home/>} />
+      	<Route exact path="/about" element={<About/>} />
+				<Route exact path="/contact-us" element={<Contact/>} />
         </Routes>
 			<Footer id="footer"/>
 			</BrowserRouter>
