@@ -17,10 +17,6 @@ import {
 
 function App() {
 
-	let weather = "clear";
-
-
-
   return (
     <div className="App">
 			<BrowserRouter>
