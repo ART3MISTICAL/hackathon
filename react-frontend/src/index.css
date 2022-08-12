@@ -8,10 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./assets/cloud.jpg");
-  background-position-y: -150px;
-  background-size: cover;
-  background-repeat: repeat-y;
+
   
 }
 
@@ -89,6 +86,7 @@ code {
 }
 
 #temp {
+	padding-top: 20px;
 	font-size: 70px;
 	color: white;
 	padding-bottom: 0px;
@@ -108,7 +106,7 @@ code {
 
 #weather {
 	margin-top: 0px;
-	padding-top: 0px;
+	padding-top: 10px;
 	font-size: 25px;
 	color: white;
 }
@@ -117,4 +115,87 @@ code {
 	margin-top: 0px;
 	font-size: 20px;
 	color: white;
+}
+
+.app {
+	background-image: url("./assets/cloud.jpg");
+	background-position-y: -150px;
+	background-size: cover;
+	background-repeat: repeat-y;
+}
+@media (max-width: 600px) {
+	.app {
+	  /*padding-top: 20px;*/
+	  background-image: url("./assets/earth2.png");
+	  background-size: cover
+	}
+}
+
+.app.rain {
+	background: rgba(0,0,0,0.2)url("./assets/rain.png");
+	background-size: cover;
+	background-repeat: repeat-y;
+	background-blend-mode: darken;
+} @media (max-width: 600px) {
+	.app.rain {
+		background: url("./assets/rain2.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+.app.clouds {
+	background: rgba(0,0,0,0.2)url("./assets/cloud.jpg");
+	background-size: cover;
+	background-repeat: repeat-y;
+	background-blend-mode: darken;
+} @media (max-width: 600px) {
+	.app.clouds {
+		background: rgba(0,0,0,0.2)url("./assets/earth2.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-blend-mode: darken;
+	}
+}
+
+.app.sun {
+	background: rgba(0,0,0,0.2)url("./assets/sunny.jpg");
+	background-size: cover;
+	background-repeat: repeat-y;
+	background-blend-mode: darken;
+} @media (max-width: 600px) {
+	.app.sun {
+		background: rgba(0,0,0,0.2)url("./assets/sunny2.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-blend-mode: darken;
+	}
+}
+
+.app.clear {
+	background: rgba(0,0,0,0.2)url("./assets/clear.jpg");
+	background-size: cover;
+	background-repeat: repeat-y;
+	background-blend-mode: darken;
+} @media (max-width: 600px) {
+	.app.clear {
+		background: rgba(0,0,0,0.2)url("./assets/blue2.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-blend-mode: darken;
+	}
+}
+
+.app.dust {
+	background: rgba(0,0,0,0.2)url("./assets/dust.jpg");
+	background-size: cover;
+	background-repeat: repeat-y;
+	background-blend-mode: darken;
+} @media (max-width: 600px) {
+	.app.dust {
+		background: rgba(0,0,0,0.2)url("./assets/dust2.jpeg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-blend-mode: darken;
+	}
 }
