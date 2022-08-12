@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.d61416f9.css",
-    "main.js": "/static/js/main.afe7e837.js",
-    "static/js/787.0f148dca.chunk.js": "/static/js/787.0f148dca.chunk.js",
-    "static/media/haze.jpg": "/static/media/haze.9189f6a2d8043c9cfab1.jpg",
-    "static/media/haze2.jpg": "/static/media/haze2.159c2dceea1bedd09095.jpg",
-    "static/media/cloud.jpg": "/static/media/cloud.fe6cd0d8bcd5c44cd7c0.jpg",
-    "static/media/dust.jpg": "/static/media/dust.04f82eee1c57852b80d4.jpg",
-    "static/media/thunder.jpg": "/static/media/thunder.a7565e4f440e81b17634.jpg",
-    "static/media/sunny.jpg": "/static/media/sunny.260fab41b962e6b11fbf.jpg",
-    "static/media/thunder2.jpg": "/static/media/thunder2.240d243ec60c5ee5a0b8.jpg",
-    "static/media/rain.png": "/static/media/rain.dfe1f0415bcce496af3a.png",
-    "static/media/clear.jpg": "/static/media/clear.533860da277d2893eb52.jpg",
-    "static/media/dust2.jpeg": "/static/media/dust2.ffb498605519206af4c6.jpeg",
-    "static/media/earth2.png": "/static/media/earth2.8bdbbe6768da67f23f6d.png",
-    "static/media/sunny2.jpg": "/static/media/sunny2.0eb3a0e5722ce39b0dc9.jpg",
-    "static/media/rain2.png": "/static/media/rain2.70d73486601905adf7a6.png",
-    "static/media/blue2.png": "/static/media/blue2.4c5772a2c9f8c29450ae.png",
-    "index.html": "/index.html",
-    "main.d61416f9.css.map": "/static/css/main.d61416f9.css.map",
-    "main.afe7e837.js.map": "/static/js/main.afe7e837.js.map",
-    "787.0f148dca.chunk.js.map": "/static/js/787.0f148dca.chunk.js.map"
+    "main.css": "/hackathon/static/css/main.4421dee7.css",
+    "main.js": "/hackathon/static/js/main.01b485e0.js",
+    "static/js/787.0f148dca.chunk.js": "/hackathon/static/js/787.0f148dca.chunk.js",
+    "static/media/haze.jpg": "/hackathon/static/media/haze.9189f6a2d8043c9cfab1.jpg",
+    "static/media/haze2.jpg": "/hackathon/static/media/haze2.159c2dceea1bedd09095.jpg",
+    "static/media/cloud.jpg": "/hackathon/static/media/cloud.fe6cd0d8bcd5c44cd7c0.jpg",
+    "static/media/dust.jpg": "/hackathon/static/media/dust.04f82eee1c57852b80d4.jpg",
+    "static/media/thunder.jpg": "/hackathon/static/media/thunder.a7565e4f440e81b17634.jpg",
+    "static/media/sunny.jpg": "/hackathon/static/media/sunny.260fab41b962e6b11fbf.jpg",
+    "static/media/thunder2.jpg": "/hackathon/static/media/thunder2.240d243ec60c5ee5a0b8.jpg",
+    "static/media/rain.png": "/hackathon/static/media/rain.dfe1f0415bcce496af3a.png",
+    "static/media/clear.jpg": "/hackathon/static/media/clear.533860da277d2893eb52.jpg",
+    "static/media/dust2.jpeg": "/hackathon/static/media/dust2.ffb498605519206af4c6.jpeg",
+    "static/media/earth2.png": "/hackathon/static/media/earth2.8bdbbe6768da67f23f6d.png",
+    "static/media/sunny2.jpg": "/hackathon/static/media/sunny2.0eb3a0e5722ce39b0dc9.jpg",
+    "static/media/rain2.png": "/hackathon/static/media/rain2.70d73486601905adf7a6.png",
+    "static/media/blue2.png": "/hackathon/static/media/blue2.4c5772a2c9f8c29450ae.png",
+    "index.html": "/hackathon/index.html",
+    "main.4421dee7.css.map": "/hackathon/static/css/main.4421dee7.css.map",
+    "main.01b485e0.js.map": "/hackathon/static/js/main.01b485e0.js.map",
+    "787.0f148dca.chunk.js.map": "/hackathon/static/js/787.0f148dca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d61416f9.css",
-    "static/js/main.afe7e837.js"
+    "static/css/main.4421dee7.css",
+    "static/js/main.01b485e0.js"
   ]
 }
