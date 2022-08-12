@@ -1,4 +1,4 @@
-#weather app
+# weather app
 
 Project made with React js
 
@@ -14,7 +14,7 @@ The website is also 100% dynamic(except the easter egg)
 
 It uses different images for different weather conditions and different media(pc/phone)
 
-#About The Website
+## About The Website
 
 This website is a tool for people who need to track weather forcasts and currect conditions of the climate as they update in real time.
 
@@ -22,6 +22,6 @@ This App tells you the-
 1) Temperature
 2) Weather 
 
-#About Us
+## About Us
 
 Developed by Devansh Arora and Aryan Saraf [DPS Faridabad, Sec-19] in less than 2 days as a hackathon project. We both have great interest in coding and believe that the future ahead truly depends on code and Tech.
