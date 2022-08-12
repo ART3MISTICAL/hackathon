@@ -213,6 +213,35 @@ code {
 	}
 }
 
+.app.thunder {
+	background: rgba(0,0,0,0.2)url("./assets/thunder.jpg");
+	background-size: cover;
+	background-repeat: repeat-y;
+	background-blend-mode: darken;
+} @media (max-width: 600px) {
+	.app.thunder {
+		background: rgba(0,0,0,0.2)url("./assets/thunder2.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-blend-mode: darken;
+	}
+}
+
+.app.haze {
+	background: rgba(0,0,0,0.2)url("./assets/haze.jpg");
+	background-size: cover;
+	background-repeat: repeat-y;
+	background-blend-mode: darken;
+} @media (max-width: 600px) {
+	.app.haze {
+		background: rgba(0,0,0,0.2)url("./assets/haze2.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-blend-mode: darken;
+	}
+}
+
+
 .text-box {
 
 	background-color: rgba(0, 0, 0, 0.4);

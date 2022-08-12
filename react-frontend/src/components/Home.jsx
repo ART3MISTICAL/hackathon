@@ -1,16 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-//import cloudyPhone from '../assets/earth2.png';
-//import rainyPhone from '../assets/rain2.png';
-//import sunny from '../assets/sunny.jpg';
-//import sunnyPhone from '../assets/sunny2.jpg';
-//import clear from '../assets/clear.jpg';
-//import clearPhone from '../assets/blue2.png';
-//import dust from '../assets/dust.jpg'
-//import dustPhone from '../assets/dust2.jpeg';
-//import rainy from  "../assets/rain.png";
-//import cloudy from "../assets/cloud.jpg";
-//import SearchBar from './SearchBar';
+
 
 export default function Home() {
 	
@@ -26,12 +16,49 @@ export default function Home() {
 		  setData(response.data);
 		  //console.log(response.data);	
 		})
-				
 					setLocation('')
+					changeBackground()
 	  
 	}
+	changeBackground()
 		
 	}
+
+	//const [mode, setMode] = useState('');
+
+	const changeBackground = () => {
+
+		let weather = document.getElementById('plsWork').innerHTML;
+		//let weather = data.weather[0].main;
+
+		console.log(weather)
+		//{/*//window.weather = data.weather[0].main;*/}
+		if (weather === 'Rain') {
+			document.body.className = 'app rain';
+		}
+		if (weather === 'Clouds') {
+			document.body.className = 'app clouds';
+		}
+	
+		if (weather === 'Sun') {
+			document.body.className = 'app sun';
+		}
+		
+		if (weather === 'Clear') {
+			document.body.className = 'app clear';
+		}
+	
+		if (weather === 'Dust') {
+			document.body.className = 'app dust';
+		}
+		if (weather === 'Thunderstorm') {
+			document.body.className = 'app thunder';
+		}
+		if (weather === 'Haze') {
+			document.body.className = 'app haze'
+		}
+	
+		}
 
 	return(
 		<>
@@ -45,17 +72,21 @@ export default function Home() {
 					onKeyPress={searchLocation}
 				/>
 			</div>
+			<p className="text">
+				Click enter twice to change background 
+			</p>
 			<div className="container weather-box" >
 				<div id="temp">
 					{data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
 				</div>
 				<div id="weather">
-					{data.weather ? <p id="pls work">{data.weather[0].main}</p> : <p>Enter Location in the search bar</p>}
+					{data.weather ?  <p id="plsWork">{data.weather[0].main}</p> : <p id="plsWork">Enter Location in the search bar</p>}
 				</div>
-
+				
 				<div id="place">
 					{data.weather ? <p>{data.name}, {data.sys.country}</p> : null}
 				</div>
+				
 			</div>
 		</>
 	);
