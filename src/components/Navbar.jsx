@@ -18,6 +18,9 @@ export default function Navbar(props) {
 					<li className="nav-item">
 						<Link className="nav-link" to="/hackathon/about">About us</Link>
 					</li>
+					<li className='nav-item'>
+						<a className="nav-link" href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Easter egg</a>
+					</li>
 					{/*<li className="nav-item dropdown">
 						<a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Dropdown
