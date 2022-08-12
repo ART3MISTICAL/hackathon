@@ -12,6 +12,7 @@ import {
   Route,
   //Link
 } from "react-router-dom";
+import Contact from './components/Contact';
 
 
 
@@ -27,6 +28,7 @@ function App() {
 			<Routes>
 				<Route exact path="/" element={<Home/>} />
       	<Route exact path="/about" element={<About/>} />
+				<Route exact path="/contact-us" element={<Contact/>} />
         </Routes>
 			<Footer id="footer"/>
 			</BrowserRouter>

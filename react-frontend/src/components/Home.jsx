@@ -26,31 +26,9 @@ export default function Home() {
 		  setData(response.data);
 		  //console.log(response.data);	
 		})
-
-		.then((background) => {
-
-					//window.weather = data.weather[0].main;
-					if (data.weather[0].mainweather === 'Rain') {
-						document.body.className = 'app rain';
-					}
-					if (data.weather[0].main === 'Clouds') {
-						document.body.className = 'app clouds';
-					}
-				
-					if (data.weather[0].main === 'Sun') {
-						document.body.className = 'app sun';
-					}
-					
-					if (data.weather[0].main === 'Clear') {
-						document.body.className = 'app clear';
-					}
-		
-					if (data.weather[0].main === 'Dust') {
-						document.body.className = 'app dust';
-					}
 				
 					setLocation('')
-	  })
+	  
 	}
 		
 	}
@@ -67,13 +45,14 @@ export default function Home() {
 					onKeyPress={searchLocation}
 				/>
 			</div>
-			<div className="container" id="weather-box">
+			<div className="container weather-box" >
 				<div id="temp">
 					{data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
 				</div>
 				<div id="weather">
-					{data.weather ? <p>{data.weather[0].main}</p> : <p>Enter Location in the search bar</p>}
+					{data.weather ? <p id="pls work">{data.weather[0].main}</p> : <p>Enter Location in the search bar</p>}
 				</div>
+
 				<div id="place">
 					{data.weather ? <p>{data.name}, {data.sys.country}</p> : null}
 				</div>

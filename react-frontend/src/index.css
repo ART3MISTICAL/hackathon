@@ -29,6 +29,7 @@ code {
 
 	#contact {
 		margin-left: auto;
+		margin-right: auto;
 	}
 
 	#main-title {
@@ -41,6 +42,18 @@ code {
 		margin-right: auto;
 		width: 50%;
 	}
+	.text-box {
+		background-color: rgba(0, 0, 0, 0.3);
+		margin-top: 30px;
+		width: 250px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 10px;
+	
+		border-radius: 25px 25px;
+		color: white;
+	}
+	
 /*
 	#footer {
 		margin-top: 100%;
@@ -93,7 +106,7 @@ code {
 	margin-bottom: 0px;
 }
 
-#weather-box {
+.weather-box {
 	background-color: rgba(0, 0, 0, 0.3);
 	margin-top: 30px;
 	width: 250px;
@@ -198,4 +211,39 @@ code {
 		background-repeat: no-repeat;
 		background-blend-mode: darken;
 	}
+}
+
+.text-box {
+
+	background-color: rgba(0, 0, 0, 0.3);
+	margin-top: 30px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+
+	border-radius: 25px 25px;
+	
+	text-align: left;
+	color: white;
+	
+} @media (max-width: 600px) {
+	.text-box{
+		background-color: rgba(0, 0, 0, 0.3);
+		margin-top: 30px;
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 10px;
+
+		border-radius: 25px 25px;
+		
+		text-align: left;
+		color: white;
+	}	
+}
+
+.text {
+	padding: 5px;
+	margin-bottom: 0px;
 }
