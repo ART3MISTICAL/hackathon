@@ -1,4 +1,6 @@
-# weather app
+# Weather App
+
+Website link => https://art3mistical.github.io/hackathon/
 
 Project made with React js
 
@@ -10,7 +12,7 @@ Then it displays the temperature, weather condition and place
 
 It also has an about page, contact us page, both of them are 100% dynamic
 
-The website is also 100% dynamic(except the easter egg)
+The website is also 100% dynamic(except the easter egg). It uses react-router for dynamic loading
 
 It uses different images for different weather conditions and different media(pc/phone)
 
