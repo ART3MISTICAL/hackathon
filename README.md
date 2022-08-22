@@ -2,6 +2,8 @@
 
 Website link => https://art3mistical.github.io/hackathon/
 
+![image](https://user-images.githubusercontent.com/68769374/185902302-267dbf11-9428-4e69-9c6a-a41758cf5e63.png)
+
 Project made with React js
 
 Navbar and footer created by bootstrap
@@ -11,6 +13,8 @@ Uses axios to fetch api (watched from a tutorial)
 Then it displays the temperature, weather condition and place
 
 It also has an about page, contact us page, both of them are 100% dynamic
+
+![image](https://user-images.githubusercontent.com/68769374/185903306-2f976cd7-febd-49cd-a095-876f3c3dce3f.png)
 
 The website is also 100% dynamic(except the easter egg). It uses react-router for dynamic loading
 
