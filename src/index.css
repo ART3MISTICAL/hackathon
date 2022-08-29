@@ -66,7 +66,7 @@ code {
 }
 
 #footer {
-	margin-top: 100%;
+	/*margin-top: 30vh;*/
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -134,20 +134,24 @@ code {
 	background-image: url("./assets/cloud.jpg");
 	background-position-y: -150px;
 	background-size: cover;
-	background-repeat: repeat-y;
+	background-repeat: no-repeat;
+	height: 100vh;
+
 }
 @media (max-width: 600px) {
 	.app {
-	  /*padding-top: 20px;*/
+	  /*padding-top: 50px;*/
 	  background-image: url("./assets/earth2.png");
-	  background-size: cover
+	  background-size: 100vw 100vh;
+	  height: 100vh;
+	  
 	}
 }
 
 .app.rain {
 	background: rgba(0,0,0,0.2)url("./assets/rain.png");
 	background-size: cover;
-	background-repeat: repeat-y;
+	/*background-repeat: repeat-y;*/
 	background-blend-mode: darken;
 } @media (max-width: 600px) {
 	.app.rain {
@@ -160,7 +164,7 @@ code {
 .app.clouds {
 	background: rgba(0,0,0,0.2)url("./assets/cloud.jpg");
 	background-size: cover;
-	background-repeat: repeat-y;
+	/*background-repeat: repeat-y;*/
 	background-blend-mode: darken;
 } @media (max-width: 600px) {
 	.app.clouds {
@@ -174,7 +178,7 @@ code {
 .app.sun {
 	background: rgba(0,0,0,0.2)url("./assets/sunny.jpg");
 	background-size: cover;
-	background-repeat: repeat-y;
+	/*background-repeat: repeat-y;*/
 	background-blend-mode: darken;
 } @media (max-width: 600px) {
 	.app.sun {
@@ -188,7 +192,7 @@ code {
 .app.clear {
 	background: rgba(0,0,0,0.2)url("./assets/clear.jpg");
 	background-size: cover;
-	background-repeat: repeat-y;
+	/*background-repeat: repeat-y;*/
 	background-blend-mode: darken;
 } @media (max-width: 600px) {
 	.app.clear {
@@ -202,7 +206,7 @@ code {
 .app.dust {
 	background: rgba(0,0,0,0.2)url("./assets/dust.jpg");
 	background-size: cover;
-	background-repeat: repeat-y;
+	/*background-repeat: repeat-y;*/
 	background-blend-mode: darken;
 } @media (max-width: 600px) {
 	.app.dust {
@@ -216,7 +220,7 @@ code {
 .app.thunder {
 	background: rgba(0,0,0,0.2)url("./assets/thunder.jpg");
 	background-size: cover;
-	background-repeat: repeat-y;
+	/*background-repeat: repeat-y;*/
 	background-blend-mode: darken;
 } @media (max-width: 600px) {
 	.app.thunder {
@@ -230,7 +234,7 @@ code {
 .app.haze {
 	background: rgba(0,0,0,0.2)url("./assets/haze.jpg");
 	background-size: cover;
-	background-repeat: repeat-y;
+	/*background-repeat: repeat-y;*/
 	background-blend-mode: darken;
 } @media (max-width: 600px) {
 	.app.haze {
